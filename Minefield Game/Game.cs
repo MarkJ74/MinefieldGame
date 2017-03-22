@@ -85,7 +85,7 @@ namespace Minefield_Game
         {
             this.output.WriteLine("Minefield Game");
             this.output.WriteLine("==============");
-            this.output.WriteLine($"You are at position A1 on a {this.numberOfColumns}x{this.numberOfRows} grid, you must reach row H without hitting 3 mines.");
+            this.output.WriteLine($"You are at position A1 on a {this.numberOfColumns}x{this.numberOfRows} grid, you have {this.numberOfLives} lives and must reach row {GetLetterFromNumber(this.numberOfRows)} without hitting {this.numberOfMines} mines.");
             this.output.WriteLine("Type U, D, L or R to move up, down, left or right, or type X to exit.");
         }
 
